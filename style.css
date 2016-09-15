@@ -19,7 +19,8 @@ header {
 header .container h1 {
 	color: #37B1CB;
 	font-size: 36px;
-	font-family: Lobster, cursive;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 3px;
 }
 
 #profile {
@@ -30,10 +31,13 @@ header .container h1 {
 	padding-bottom: 20px;
 
 }
+a {
+	text-decoration: none;
+}
 
 h2 {
     font-size: 20px;
-    font-family: Lobster, cursive;
+    font-family: Kaushan Script, cursive;
 }
 
 header nav {
@@ -46,7 +50,7 @@ header nav {
 h3 {
 	text-align: center;
 	color: #37B1CB;
-	font-family: Lobster, cursive;
+    font-family: 'Kaushan Script', cursive;
 	font-size: 28px;
 }
 
@@ -55,15 +59,14 @@ body {
 	background-color: white;
 	font-family: Raleway, sans-serif;
 	font-size: 17px;
-
-}
-
-main {
 	display: block;
 	margin: 11rem auto 0 auto;
 	max-width: 700px;
 	text-align: justify;
 	line-height: 1.3em;
+}
+time {
+	padding-left: 16em;
 }
 
 article {
@@ -80,5 +83,13 @@ article:after {
 }
 
 .indent {
-	text-indent: 8px;
+	text-indent: 2em;
+}
+
+video {
+	padding-left: 12em;
+}
+
+#ledpi {
+	padding-left: 12em; 
 }
