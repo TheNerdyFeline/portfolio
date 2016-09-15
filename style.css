@@ -1,0 +1,84 @@
+header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin-bottom: 20px;
+	background-color: #85A1B2;
+	height: 9.5rem;
+}
+
+.container {
+	position: relative;
+	margin: 0.5rem auto;
+	padding: 5px;
+	height: 2.5rem;
+	max-width: 700px;
+	line-height: 1em;
+}
+header .container h1 {
+	color: #37B1CB;
+	font-size: 36px;
+	font-family: Lobster, cursive;
+}
+
+#profile {
+	width: 100px;
+	float: left;
+	padding-right: 10px;
+	padding-top: 0;
+	padding-bottom: 20px;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Lobster, cursive;
+}
+
+header nav {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+}
+
+h3 {
+	text-align: center;
+	color: #37B1CB;
+	font-family: Lobster, cursive;
+	font-size: 28px;
+}
+
+body {
+	color: black;
+	background-color: white;
+	font-family: Raleway, sans-serif;
+	font-size: 17px;
+
+}
+
+main {
+	display: block;
+	margin: 11rem auto 0 auto;
+	max-width: 700px;
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+article:after {
+	display: block;
+	content: '';
+	border-bottom: 2px dotted #337481;
+	width: 75%;
+	margin: auto;
+	margin-top: 1em;
+}
+
+.indent {
+	text-indent: 8px;
+}
