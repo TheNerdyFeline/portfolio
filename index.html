@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang='en'>
- <head>
-  <title>The Nerdy Feline</title>
-  <link href='style.css' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway" rel="stylesheet">
- </head>
- 
-<body>
-  <header>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!-- jquery link -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- veiwport info for media query -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- boostrap jquery link -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- bootstrap link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+    </head>
+    <body>
+<header>
    <div class='container'>
     <img id='profile' src='media/Kenzithots.jpg' alt='Kenzipic'>
     <h1><a href='/'>The Nerdy Feline</a></h1>
@@ -15,47 +24,42 @@
     <h2>jmw5050@gmail.com</h2>
     <nav id='links'>
      <ul>
-       <li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline'>Github</a></li>
+	 <li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline' target="_blank">Github</a></li>
+	 <li><a href="https://www.linkedin.com/in/jackiewellons/" title="linkedin" target="_blank">Linkedin</a></li>
      </ul>
     </nav>
    </div>
   </header>
-  <main>
-      <article class="blog">
-	  <h3>First Week of Coding Boot Camp</h3>
-	  <time datetime="2017-01-29">
-	      January 29, 2017
-	  </time>
-	  <br>
-	  <p class="indent"> Hi Everyone! I know it has been a while since I posted a project, but I realized that before I can really get into programming any language I need a better foundation of basic computer skills and teachers I can ask for help. So I signed up for UCLA Extentiosn Coding Boot Camp, and I just finished my first week.  It is a 6 month program, and as I go through I will be adding more projects to my online portfolio. However I have been prepping this whole time on getting some basic computer skills.</p>
-	  <p class="indent">I have been learning command line and Emacs, my chosen text editor. I highly recommend if you want to learn to program you start with command line, your best friend and picking a nice text editor.  On the first day they did go over some baic command line commands, but it was nice I already knew my way around, like the short cut to move the cursor to the beginning of the line, Ctl-a. I also found it was helpful to pick a good text editor.  I have really enjoyed learning and playing in Emacs.</p>
-	  <p class="indent">With Emacs it is a bit more complicated then sublime, but both are great text editors.  They come with some amazing tools that can help you debug, and test your code.  One thing that was missing from the book I read on Emacs is if I want to see the changes I made to my init file I had to evaluate the line I just inserted. So reading mutiple books, and having a mentor you can ask questions can be really helpful when you come across missing information, as well as Google. In boot camp they call that Google fu, because searching online is going to be your other best friend. Getting these basic skills down really helped me be better prepared so I can concentrate on just learning the concepts of computer languages. I can't wait to see what I learn next.</p>
-	  
-      </article>
+  <!-- About Me -->
+  <div id="about">
+      <h3>About Me</h3>
+      <p class="indent">I am The Nerdy Feline, and a full stack web developer, I will be completing a Full Stack Web Development Program at the end of July.  My current projects are the homework assignments and group projects from the class, but I am looking for work and my next project. Check out some of my favorite projects below.  You can also see the code for all projects on github.</p>
+      <p class="indent">I also love to cook, bake, garden, and have 4 wonderful cats. I love in Glendale, CA and am always looking for new adventures and new things to learn.  Feel free to contact me if you have any questions.</p>
+  </div>
+  <br/>
+  <br/>
+  <br/>
 
-      <article class='blog'>
-	  <h3>Python and LED Fun</h3>
-	  <time datetime="2016-09-15">
-      September 15, 2016
-	  </time><br>
-	  <br>
-    <video width='320' height='240' controls>
-     <source src='media/ledvid.mp4' type='video/mp4'>
-    </video>
-    <p class='indent'>Hi Everyone! I have been playing with python, and I was able to make this awesome program to turn LED's on and off on my raspberry pi 2.  If you don't know much about Raspberry pi, it is a very small computer that is just as powerful as a desktop, and the current one is 3.  You will see it in a clear box in the back of the video.  I used wires, a bread board, resistors, and the GPIO on the pi to make this work.  I built 2 functions, one for each light, green and red.  You can see in the code below how I imported different modules and in the video how I set it up so each channel corresponded to different channel on the bread board.  I made sure each channel went through a resistor and was grounded to prevent overpowering the LED.  When I tried to repeat this experiment later I ran into a problem because the GPIO were already assigned, so I had to use GPIO.cleanup() to reset the channels at the end.</p><br/>
-    <img id='ledpi' src='media/LEDPi.jpg' alt='PiCode'>
+  <!-- portfolio -->
+  <div id="portfolio">
+      <h1 id="port">Portfolio</h1>
+      <div class="project">
+	  <a href="./marvel-app/index.html" target="_blank" class="title"><h3>Herolution</h3></a>
+	  <p class="indent">This project was my first group programming project, and we chose a passion project based on Marvel.  We thought it would be great to help people be heroes in their own community.  This app allows a user to search for places to volunteer as well as find registered heroes from the movies.  We did not stop there, because what superhero is complete without a sidekick. We also wanted people to rescue animals as their sidekicks.  I built the main page html, and the javascript for it. You can checkout the app by clicking the link above or you can checkout the code at github, <a href="https://github.com/TheNerdyFeline/marvel-app" title="marvel=app" target="_blank">here</a>.</p>
+      </div>
 
-   </article>
+      <div class="project">
+	  <a href="https://sequelizeburger1000.herokuapp.com/" target="_blank" class="title"><h3>LIRI</h3></a>
+	  <p class="indent">This was a simple full stack web app that allows a user to name and order a burger, then devour it.  This was one of the first projects I built a server for as well as creatd a mySQL database and used seuqelize to change the data in the database. I also launched it on heroku where you can use the app. It was a fun homework assignment.  You can checkout the app by clicking the link above or you can checkout the code at github, <a href="https://github.com/TheNerdyFeline/HW-Sequelize-burger" title="LIRI" target="_blank">here</a>.</p>
+      </div>
 
-   <article class='blog'>
-       <h3>My First Website</h3>
-       <time datetime="2016-09-14">
-      September 14, 2016
-       </time>
-    <p class='indent'>Hi Everyone! Welcome to my first website.  I was able to take an intro to html/css class, and I took what I learned to build this website.  For those of you also new to programming, it is what all websites are coded with.  Although some wrap it up a bow for you to just drag and drop everything into place, but I don't always like the way they work. </p>
-    <p class='indent'>When making an html you will need a text editor, such as sublime, which will allow you to save the file as index.html, and a style sheet saves as style.css.  The end .html and .css is the most important part, because it tells the computer the type of file it is reading.  HTML stands for Hyper-Text Mark-up Language, and CSS stands for Cascading Style ¬Sheet.  The more important one to remember is what css stands for, because it is how the computer reads and changes your website.  The computer reads the sheet top to bottom, applying each change as it goes. There are many different ways to use css to select and adjust each piece, and a great way to learn is through a <a href='http://flukeout.github.io/' title='css game'>Css Game.</a>.</p>
-    <p class='indent'>There are many great resources for learning the basic setup, and it is one of the simplest languages to learn.  I have found it is a great place to start programming, and you can search online for just about any error message or problem.  Another great way to learn is to take classes, but I understand you may not want to commit to a full boot camp, so sites like meetup.com will help you to find groups that offer 1 or 2 day classes.   There are also some amazing sites that offer free classes online such as <a href='http://www.freecodecamp.com' title='freecodecamp'>freecodecamp.com</a> and <a href='htts://www.codeacademy.com' title=’codeacademy’>codeacademy.com</a>.  Good luck and be sure to check back for more projects! </p>
-   </article>
-  </main>
- </body>
+      <div class="project">
+	  <a href="https://thenerdyfeline.github.io/HW-triviaGame/" target="_blank" class="title"><h3>Trivia Game</h3></a>
+	  <p class="indent">This is one of the first games I made in school, and it is where I started building separated algorithms for the different functions. This is where I found I really enjoy making games, and really had fun with it.  I made the trivia questions in a separate javascript file so that you can easily change the trivia game to any category, right now it is Disney trivia.  You can checkout the app by clicking the link above or you can checkout the code at github, <a href="https://github.com/TheNerdyFeline/HW-triviaGame" title="trivia" target="_blank">here</a>.</p>
+      </div>
+  </div> <!-- close portfolio -->
+
+
+  <!-- <script src="script.js" type="text/javascript"></script> -->
+    </body>
 </html>

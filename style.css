@@ -1,41 +1,46 @@
 header {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	margin-bottom: 20px;
-	background-color: #85A1B2;
-	height: 9.5rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    background-color: #85A1B2;
+    height: 15rem;
 }
 
 .container {
-	position: relative;
-	margin: 0.5rem auto;
-	padding: 5px;
-	height: 2.5rem;
-	max-width: 700px;
-	line-height: 1em;
+    position: relative;
+    margin: 1.5rem auto;
+    padding: 5px;
+    height: 2.5rem;
+    max-width: 700px;
+    line-height: 1em;
 }
 header .container h1 {
-	color: #37B1CB;
-	font-size: 36px;
+    color: #37B1CB;
+    font-size: 34px;
     font-family: 'Kaushan Script', cursive;
     padding-bottom: 3px;
 }
 
 #profile {
-	width: 100px;
-	float: left;
-	padding-right: 10px;
-	padding-top: 0;
-	padding-bottom: 20px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 20px;
 
 }
 a {
-	text-decoration: none;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 4px;
 }
 
 h2 {
+    margin-top: 10px;
     font-size: 20px;
     font-family: Kaushan Script, cursive;
 }
@@ -48,25 +53,25 @@ header nav {
 }
 
 h3 {
-	text-align: center;
-	color: #37B1CB;
+    text-align: center;
+    color: #37B1CB;
     font-family: 'Kaushan Script', cursive;
-	font-size: 28px;
+    font-size: 28px;
 }
 
 body {
-	color: black;
-	background-color: white;
-	font-family: Raleway, sans-serif;
-	font-size: 17px;
-	display: block;
-	margin: 11rem auto 0 auto;
-	max-width: 700px;
-	text-align: justify;
-	line-height: 1.3em;
+    color: black;
+    background-color: #FEF5E7;
+    font-family: Raleway, sans-serif;
+    font-size: 17px;
+    display: block;
+    margin: 11rem auto 0 auto;
+    max-width: 700px;
+    text-align: justify;
+    line-height: 1.3em;
 }
 time {
-	padding-left: 16em;
+    padding-left: 16em;
 }
 
 article {
@@ -74,22 +79,26 @@ article {
 }
 
 article:after {
-	display: block;
-	content: '';
-	border-bottom: 2px dotted #337481;
-	width: 75%;
-	margin: auto;
-	margin-top: 1em;
+    display: block;
+    content: '';
+    border-bottom: 2px dotted #337481;
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
 }
 
 .indent {
-	text-indent: 2em;
+    text-indent: 2em;
 }
 
-video {
-	padding-left: 12em;
+#about {
+    margin-top: 20rem;
 }
 
-#ledpi {
-	padding-left: 12em; 
+#port {
+    display: block;
+    text-align: center;
+    //color: #37B1CB;
+    font-size: 36px;
+    font-family: 'Kaushan Script', cursive;
 }
