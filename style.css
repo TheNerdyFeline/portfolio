@@ -4,8 +4,8 @@ header {
     top: 0;
     left: 0;
     margin-bottom: 20px;
-    background-color: #85A1B2;
-    height: 15rem;
+    background: #85A1B2;
+    height: 11em;
 }
 
 .container {
@@ -15,6 +15,7 @@ header {
     height: 2.5rem;
     max-width: 700px;
     line-height: 1em;
+    
 }
 header .container h1 {
     color: #37B1CB;
@@ -31,12 +32,10 @@ header .container h1 {
     padding-bottom: 20px;
 
 }
-a {
-    text-decoration: none;
-}
 
 h1 {
     margin-top: 4px;
+   // text-decoration: none;
 }
 
 h2 {
@@ -52,6 +51,18 @@ header nav {
     top: 0.8rem;
 }
 
+nav {
+    position: static;
+    z-index: 1001;
+}
+
+.navlink {
+    color: black;
+    background: #85A1B2;
+}
+
+
+
 h3 {
     text-align: center;
     color: #37B1CB;
@@ -61,14 +72,14 @@ h3 {
 
 body {
     color: black;
-    background-color: #FEF5E7;
+    background: #FEF5E7;
     font-family: Raleway, sans-serif;
     font-size: 17px;
     display: block;
     margin: 11rem auto 0 auto;
     max-width: 700px;
-    text-align: justify;
     line-height: 1.3em;
+    padding: 1em;
 }
 time {
     padding-left: 16em;
@@ -87,8 +98,13 @@ article:after {
     margin-top: 1em;
 }
 
+.main {
+    text-align: justify;
+}
+
 .indent {
     text-indent: 2em;
+    margin-top: -.5em;
 }
 
 #about {
