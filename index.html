@@ -16,7 +16,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7cRaleway" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	
     </head>
@@ -33,15 +33,17 @@
 		    <nav class="navbar-fixed navbar-right" id='links'>
 			<div class="container-fluid">
 			    <div class="navbar-header">
-			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar-fixed">
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
-			    </button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar-fixed">
+				    <span class="glyphicon glyphicon-menu-hamburger"></span>
+				</button>
 			    </div>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 			    <ul class="nav navbar-nav navbar-right">
-				<li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline' target="_blank" class="navlink">Github<span class="sr-only">(current)</span></a></li>
-				<li><a href="https://www.linkedin.com/in/jackiewellons/" title="linkedin" target="_blank" class="navlink">Linkedin</a></li>
+				<li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline' class="navlink">Github<span class="sr-only">(current)</span></a></li>
+				<li><a href="https://www.linkedin.com/in/jackiewellons/" title="linkedin" class="navlink">Linkedin</a></li>
+				<li><a href="port.html" title="portfolio" class="navlink">Portfolio</a></li>
+				<li><a href="aboutme.html" title="aboutme" class="navlink">About Me</a></li>
 			    </ul>
 			</div>
 		    </nav>
@@ -51,50 +53,52 @@
 	<main>
 	    <div class="row">
 		<div class="col-xl-3 col-xl-offset-4">
-		    <!-- About Me -->
-		    <section id="about">
-			<h1 id="port">About Me</h1>
-			<br/>
-			<p class="indent">I am The Nerdy Feline, a nerd who loves cats, and a Full Stack Web Developer.  I was a sound designer for 6 years, but it was not challenging enough, and I had always wanted to learn to code.  I started taking some classes, most of them were 1 day classes, intro to HTML/CSS, JavaScript, Python, anything I could find.</p>
-			<p class="indent">I loved playing around with JavaScript and Python, and was inspired to go back to school.  I found a great 6 month program at UCLA, and enjoyed working on most of the homework assignments.  I have fun working on a projects where I get to be creative and learn new things everyday.  You will find some of my favorite projects listed below, and if you click the title you can check them out. You can also see the code for all projects on my GitHub at, <a href="https://github.com/TheNerdyFeline">TheNerdyFeline</a>. I am currently looking for work and/or my next project.</p>
-			<p class="indent">I also love to cook, bake, garden, swim, and have 4 wonderful cats. Since moving to LA I have been inspired to eat and live healthier so I can be happy and healthy. Something else I had always wanted to learn was cooking, so I took some cooking classes.  At the end of a fun day of coding, I relish in cooking a healthy delicious meal. I live in Glendale, CA and am always looking for new adventures and new things to learn in coding and cooking.  Feel free to contact me if you have any questions.</p>
+		    <section id="allBlogs">
+			<article class="blog">
+			    <h3>Hybrid Polymer Element Bower.json</h3>
+			    <br>
+			    <time datetime="09-2-2017">
+				September 29, 2017
+			    </time>
+			    <br>
+			    <br>
+			    <p class="indent">So this week I am working on an open source Polymer Element, proplanr-repeat, to set up a repeating action/appointment.  It has taken some trial and error since I am new to Polymer, and it will be set up to save either to Firebase or your preferred database. The docs for Polymer are helpful, but they were missing some key elements to create a bower.json that will install both Polymer 1 and Polymer 2 dependencies in separate folders.  After looking at elements that other people have created I was able to find what I was missing.  The first thing is you need to add the proper version type at the end of the dependency in the bower.json file, #1 - 2.</p>
+			    <br>
+			    <pre><code>"dependencies": {
+    "paper-styles": "PolymerElements/paper-styles#1 - 2",
+    "polymer": "Polymer/polymer#1.9 - 2",
+    "paper-input": "PolymerElements/paper-input#1 - 2",
+    "paper-button": "PolymerElements/paper-button#1 - 2",
+    "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#1 - 2",
+    "paper-item": "PolymerElements/paper-item#1 - 2",
+    "paper-listbox": "PolymerElements/paper-listbox#1 - 2",
+    "paper-checkbox": "PolymerElements/paper-checkbox#1 - 2",
+    "vaadin-date-picker": "vaadin/vaadin-date-picker#^2.0.5",
+    "iron-form": "PolymerElements/iron-form#1 - 2"
+  },</code></pre>
+			    <br>
+			    
+			    <p class="indent">The big part I was missing hat they failed to explain in the docs was that you also had to add all the dependencies to the variant 1.x, with a different version specified. The version you need is the one compatible with Polymer 1, and usually you can find it in the docs for that element.  For most of the PolymerElements it is as simple as using, #^1.x.x.</p>
+			    <br>
+			    <pre><code>"variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#^1.9",
+        "paper-styles": "PolymerElements/paper-styles#^1.0.0",
+        "paper-input": "PolymerElements/paper-input#^1.0.2",
+        "paper-button": "PolymerElements/paper-button#^1.0.0",
+        "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^1.0.0",
+        "paper-item": "PolymerElements/paper-item#^1.0.0",
+        "paper-listbox": "PolymerElements/paper-listbox#^1.0.0",
+        "paper-checkbox": "PolymerElements/paper-checkbox#^1.0.1",
+        "vaadin-date-picker": "vaadin/vaadin-date-picker#^1.0.5",
+        "iron-form": "PolymerElements/iron-form#^1.0.1"
+      },</code></pre>
+			    <br>
+			    
+			    <p class="indent">Once I had the bower.json set-up properly I was able to run polymer install --variants and it installed both versions. In the root directory you will find both bower_components and bower_components-1.x, as well as a new bower.json created called bower-1.x.json. Then I ran polymer serve which allowed me to run the demo and test out both versions on a browser.  The next step will be incorporating the functionality to save the user input to a database and create the actions/appointments in the database as well.</p>
+			</article>
 		    </section>
-
-		    <!-- portfolio -->
-		    <section id="portfolio">
-			<h1 id="port">Portfolio</h1>
-			<section class="project">
-			    <a href="https://thenerdyfeline.github.io/marvel-app/" target="_blank" class="name"><h3>Herolution</h3></a>
-			    <ul>
-				<li>Click the title to check out the app.</li>
-				<li>Uses HTML, CSS, JavaScript, Google Maps, API, Firebase</li>
-				<li>We wanted to encourage people to be Heroes in their communities by volunteering.</li>
-				<li>I love Marvel, and was very excited that I could incorporate something I love into my first group project.</li>
-			    </ul>
-			</section>
-
-			<section class="project">
-			    <h3><a href="https://github.com/TheNerdyFeline/PerfectPet" target="_blank" class="name">Perfect Pet</a></h3>
-			    <ul>
-				<li>Click the title to check out the code on GitHub.</li>
-				<li>Uses HTML, CSS, JavaScript, Materialize, mySQL, Passport, Node.js</li>
-				<li>This is a full stack web app, and is a work in progress.</li>
-				<li>I wanted to make a social media app for pets, and allow a user to create a different page for each of their pets.</li>
-				<li>You can create an account, login, and create multiple pages for pets.</li>
-			    </ul>
-			</section>
-
-			<section class="project">
-			    <a href="https://thenerdyfeline.github.io/HW-triviaGame/" target="_blank" class="name"><h3>Trivia Game</h3></a>
-			    <ul>
-				<li>Click the title to check out the app.</li>
-				<li>Uses HTML, CSS, JavaScript, Bootstrap</li>
-				<li>This is one of the first games I made.</li>
-				<li>I designed it so you can easily change the questions to any category you want by making a separate javscript files for the questions and game play.</li>
-				<li>I also set up a timer to make it more challenging.</li>
-			    </ul>
-			</section>
-		    </section> <!-- close portfolio -->
 		</div><!-- close main -->
 	    </div> <!-- close row -->
 	</main>

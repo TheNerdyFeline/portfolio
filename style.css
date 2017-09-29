@@ -57,7 +57,7 @@ nav {
 }
 
 .navlink {
-    color: black;
+    color: #23527c;
     background: #85A1B2;
 }
 
@@ -83,6 +83,10 @@ body {
 }
 time {
     padding-left: 16em;
+}
+
+#allBlogs {
+    margin-top: 5em;
 }
 
 article {
@@ -111,6 +115,9 @@ article:after {
     margin-top: 5em;
 }
 
+
+/* Portfolio Styling */
+
 #port {
     margin-top: 1em;
     display: block;
@@ -118,4 +125,8 @@ article:after {
     //color: #37B1CB;
     font-size: 36px;
     font-family: 'Kaushan Script', cursive;
+}
+
+#portfolio {
+    margin-top: 6em;
 }
