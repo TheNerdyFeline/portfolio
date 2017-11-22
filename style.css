@@ -130,3 +130,27 @@ article:after {
 #portfolio {
     margin-top: 6em;
 }
+
+#kandiafter {
+    position: relative;
+    width: 330px;
+    margin-top: -14em;
+    margin-left: 20em;
+}
+
+#kandibefore {
+    position: relative;
+    height: 270px;
+}
+
+#after {
+    position: absolute;
+    margin-top: -15em;
+    margin-left: 34em;
+}
+
+#proplanrRepeat {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
