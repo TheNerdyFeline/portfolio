@@ -19,13 +19,13 @@ header {
 }
 header .container h1 {
     color: #37B1CB;
-    font-size: 34px;
+    font-size: 33px;
     font-family: 'Kaushan Script', cursive;
     padding-bottom: 3px;
 }
 
 #profile {
-    width: 100px;
+    width: 122px;
     float: left;
     padding-right: 10px;
     padding-top: 0;
