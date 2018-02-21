@@ -54,6 +54,20 @@
 	    <div class="row">
 		<div class="col-xl-3 col-xl-offset-4">
 		    <section id="allBlogs">
+                      <article class="blog">
+                        <h3>TCP and Local Servers</h3>
+                        <br>
+                        <time datatime="2-21-18">
+                          February 21, 2018
+                        </time>
+                        <br>
+                        <br>
+                        <p class="indent">At the beginning of the year I got great news, I as awarded a scholarship for a Grow With Goolgle class in Web Development.  Basically I am learning how to make a web app into a progressive web app. This means that I will be caching the HTML, CSS, and JS to the local machine and sending that to a user before attempting to make a connection to a server and loading datat via a socket.  This is great for building cross platform mobile apps that install like a native app but form you browser.</p>
+                        <br>
+                        <p class="indent">The class started in registering a serviceworker, and then moved onto caching the basic page. I learned how to hijack requests and send back a personalized response instead. This sounds easy, but I was running into a problem running my local server. It would take a couple hours to get my localhost to load the app so I could run my code. I was not always getting an arror, but it was like I had no internet despite other pages loading. Sometimes I would see, EADDRINUSE in the terminal, but not when I started it, only on some refreshes. I tried to restart my server, clean cache and cookies, restart my browser but nothing worked. Eventually I changed the port number and that fixed the problem, but it should not have. The port number is an arbitrary variable that as long as another server was not using it, it should have worked.  However in researching the problem I found out that despite terminating the server, a process in the code the was still trying to complete. There is a default linger time, 2 min, sending data over a web server that will lock up a port even after termination. Once it times out the port number will be open again, but ther are work arounds that were not included in the app I was given.</p>
+                        <br>
+                        <p class="indent">While I have been slowly working my way through the class it is very obvious how outdated the app and the course is. There are a few things one can add to their code in order to help avoid those problems, SO_REUSEADDR or SO_REUSEPORT. Basically they allow you to re-use the ip addres or port number without waiting for the server to close completely, but they cannot be the exact same combination of ip adress and port number when connecting to multiple sockets at the same time. The reason why this would have helped me is that since the bound socket was terminated but still in time_wait(linger time) it is considered dead. Since my code is misisng this crucial piece I have to wait for processes to time out before reconnecting the socket to the same ip address and port number. There is alot more to understanding what was happening and here is a great article on stackoverflow to explian more, <a href="https://stackoverflow.com/questions/14388706/socket-options-so-reuseaddr-and-so-reuseport-how-do-they-differ-do-they-mean-t">Socket Options</a></p>
+                      </article>
 			<article class="blog">
 			    <h3>Hand Pain and Touch Typing</h3>
 			    <br>
