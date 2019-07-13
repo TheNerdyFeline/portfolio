@@ -42,7 +42,6 @@
 			    <ul class="nav navbar-nav navbar-right">
 				<li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline' class="navlink">Github<span class="sr-only">(current)</span></a></li>
 				<li><a href="https://www.linkedin.com/in/jackiewellons/" title="linkedin" class="navlink">Linkedin</a></li>
-				<li><a href="port.html" title="portfolio" class="navlink">Portfolio</a></li>
 				<li><a href="aboutme.html" title="aboutme" class="navlink">About Me</a></li>
 			    </ul>
 			</div>
@@ -55,95 +54,58 @@
 		<div class="col-xl-3 col-xl-offset-4">
 		    <section id="allBlogs">
                       <article class="blog">
-                        <h3>Grow With Google Mobile Web Development Course</h3>
+                        <h3>Getting Started in Cyber Security</h3>
                         <br>
-                        <time datetime="4-6-18">
-                          April 6, 2018
+                        <time datetime="7-11-19">
+                          July 11, 2019
                         </time>
                         <br>
                         <br>
-                        <p class='indent'>So after hours and hours of class time, and working through the course I have finally finished. I really enjoyed the class and learned a lot. The course had pros and cons, but at the end I am glad I was given the opportunity. One of the main cons was the outdated code, but I also got to learn about some new methods that fix the primary cause of my frustration, like SO_REUSEPORT. However one of the main pros was learning how to make a web app that allowed a user to access it without the internet.  While a user may not have the latest updates, or in the class the latest posts in the feed, they were still able to load the last round of posts with photos that were cached. This allowed the app to load faster, and give the user something to see besides an error message.</p>
-                        <p class='indent'>The first part of the course explained the benefits of offline first, and that basically means that once a user has installed the app, it has a cache it can pull from first to load the basic skeleton of the web app. This is done using a ServiceWorker.  The ServiceWorker was designed to fix problems with web apps, that you do not have with mobile apps. This means that whether the internet it perfect, weak, lifi(says you have it, but don't), or offline, you can still see and interact with the basic app.  Then when you do have some internet it can go online and fetch the latest info for it. This gives it faster loading time, and the ability to work like a native mobile app. The ServiceWorker allows you to intercept a request and respond with what ever you want, a message, part of an app in the cache, send it the network and get a response. This is what allos a web app to register the ServiceWorker(install), and you can give the user the ability to choose to update or not. This is a great tool to have, and one I will be using in the future.</p>
-                        <p class='indent'>The next part of the course was how to use the ServcieWroker to hijack requests, and respond how I wanted to.  For example, I could take all the jpg requests and replace them with my own jpg instead.  Then we learned how to use IndexDb and caching to save posts and photos to the local cache.  These were the hardest lessons for me, because the local server would not load.  In my previous blog you can see more detail of the problems I had, and how I resolved them. Once I understood the problem I had with my local server I was able to move quicker through the class. It was still slow gong through the caching lessons, because the syntax was a little off. There were times I needed to add return to the function and have a return in the function, but other times it worked by having return only in the function. That was never explained very well in the course, which was one of the cons. Next I learned how to clean up the cache so it only contained the latest posts, and deleted older ones. This means my app is done and ready to launch. Now when the ServiceWorker registers, it can notify the user when an update was available, replace the old ServiceWorker with the latest one, and cache the latest posts with attached photos. The course was not over yet.</p>
-                        <p class='indent'>The last part of the course was teaching us about the latest JavaScript features and updates, ES6. There are some great updates and changes in the latest JavaScript. I had already learned about some of the new features like arrow functions, let, and const, but they also taught me about some really amazing new features, destructuring, spread, rest, classes with super and extends, promises, and proxies. These are either updated versions of old tools, like prototypes are still used but with different syntax using Classes.This is much easier to read and understand, but under the hood it is still using prototypes.  It was a quick overview, but it also gave me some great resources to dive deeper into some of the new features. Then ending with how we can use the latest features on older browsers, by transpiling it into the older version of JavaScript, ES5.1 using a plugin like Babel. While there is more in depth learning to do on everything I learned, this class was great.</p>
-                        <p class='indent'>Now that I have finished the course, I can say it was a great experience, even if it didn't always feel like it along the way. If it doesn't challenge you, you are not learning. I said that a lot, and it helped to keep me motivated. Like I said this course has pros and cons, the pros being I learned a lot and the cons mostly being outdated code and videos. While I can understand updating the videos might get difficult, they could at least update the app we were working on and add the info for it in the README, or in the notes that were suppose to be below the videos. It would have saved me hours of frustration and everyone asking the same questions again and again on slack.</p>
+												<p class='indent'>
+												When I was looking for work as web developer I started
+												finding more scammers	then clients. I quickly learned 
+												I needed to protect myself better online and
+												the sites I was building. So when I attended SCALE for the first time in
+												2018 I focused on the security panels. They not only
+												taught how to keep myself safer online but also to keep
+												my personal information more secure. I also learned how
+												to make sites I built safer and started finding meetups
+												for cyber security. I finally found the area I wanted to
+												focus on with my programming. I could continue using my
+												knowledge from web development in a new way. I
+												eventually attended an open house for a local tech
+												company, and that is where I learned about bug bounty
+												programs. I ended up focusing all my time on learning
+												about bug hunting.</p>
+                        <p class='indent'>I had made some friends in cyber
+												security so I reached out to them to see if they knew
+												where to start learning about bug hunting. They gave me
+												some great resources like Hacker1 and BugCrowd where I
+												found more info and resources. I started reading every
+												book and watching every youtube video I could find on the
+												subject. I also started implementing everything I
+												learned to my own life and trying out bug hunting. I had
+												already received great advice like using a password
+												manager, setting up to monitor accounts for any
+												transaction and login, and to lie for security
+												questions. All this has not only helped me feel more
+												secure but actually saved me from bigger problems. You can't
+												prevent data breaches but you can ensure it does as
+												little damage as possible by knowing as soon as
+												possible about it. It has been fun learning how people
+												find and exploit vulnerabilities.</p>
+                        <p class='indent'>I started out learning about OWASP's
+												top ten, and practicing on various capture the flag
+												virtual machines. I also started making my own pen test cheat
+												sheets based on the successful payloads from practicing
+												on purposely vulnerable sites and then running those on
+												real bug bounty programs. I still have a lot to learn,
+											  but that is the best part. One of my favorite moments so
+												far	was learning how to steel a cookie with XSS while
+												netcat was set to listen for the GET request when pop ups were 
+												being blocked. That was fun! Well off to learn and test,
+												TTFN.</p>
                       </article>
-                        <article class="blog">
-                        <h3>TCP and Local Servers</h3>
-                        <br>
-                        <time datatime="2-21-18">
-                          February 21, 2018
-                        </time>
-                        <br>
-                        <br>
-                        <p class="indent">At the beginning of the year I got great news, I was awarded a scholarship for a Grow With Goolgle class in Web Development.  Basically I am learning how to make a web app into a progressive web app. This means that I will be caching the HTML, CSS, and JS to the local machine and sending that to a user before attempting to make a connection to a server and loading datat via a socket.  This is great for building cross platform mobile apps that install like a native app but form you browser.</p>
-                        <br>
-                        <p class="indent">The class started in registering a serviceworker, and then moved onto caching the basic page. I learned how to hijack requests and send back a personalized response instead. This sounds easy, but I was running into a problem running my local server. It would take a couple hours to get my localhost to load the app so I could run my code. I was not always getting an error, but it was like I had no internet despite other pages loading. Sometimes I would see, EADDRINUSE in the terminal, but not when I started it, only on some refreshes. I tried to restart my server, clean cache and cookies, restart my browser but nothing worked. Eventually I changed the port number and that fixed the problem, but it should not have. The port number is an arbitrary variable that as long as another server was not using it, it should have worked.  However in researching the problem I found out that despite terminating the server, a process in the code the was still trying to complete. There is a default linger time, 2 min, sending data over a web server that will lock up a port even after termination. Once it times out the port number will be open again, but ther are work arounds that were not included in the app I was given.</p>
-                        <br>
-                        <p class="indent">While I have been slowly working my way through the class it is very obvious how outdated the app and the course is. There are a few things one can add to their code in order to help avoid those problems, SO_REUSEADDR or SO_REUSEPORT. Basically they allow you to re-use the ip addres or port number without waiting for the server to close completely, but they cannot be the exact same combination of ip adress and port number when connecting to multiple sockets at the same time. The reason why this would have helped me is that since the bound socket was terminated but still in time_wait(linger time) it is considered dead. Since my code is misisng this crucial piece I have to wait for processes to time out before reconnecting the socket to the same ip address and port number. There is alot more to understanding what was happening and here is a great article on stackoverflow to explian more, <a href="https://stackoverflow.com/questions/14388706/socket-options-so-reuseaddr-and-so-reuseport-how-do-they-differ-do-they-mean-t">Socket Options</a></p>
-                      </article>
-			<article class="blog">
-			    <h3>Hand Pain and Touch Typing</h3>
-			    <br>
-			    <time datetime="12-20-2017">
-				December 20, 2017
-			    </time>
-			    <br>
-			    <br>
-			    <p class="indent">Earlier in the fall I ran into a problem where my hands cramped up and I was unable to move them. I was unable to type for several days and I started getting behind on my internship and personal projects.  I was in screaming pain, and it seemed like there was nothing I could do, so I looked into voice to text software.  However, most of them are not compatible with Linux, the operating system I use. I know one brand has a plug in, but the other part of the problem is that these programs are not designed for a coder.  They are meant for office programs like Word, but there are libraries you can load in and train it to work.  When I reached out to see if my brother, a computer engineer, knew of anything that I was not finding online he sent me a video of someone who managed to get the voice to text to work.</p>
-			    <br>
-			    <p class="indent">This video was a few years old but he was able to hack into some software and reprogram it to work in different programming languages.  He was able to make his own library of commands of what seem like random sounds that shorthand the punctuation needed for coding.  He also mentioned that while this helped with the pain he had while typing it also caused him to get a sore throat from talking all day. So while voice to text may save your hands it takes a tool on your voice.  After learning more about what he did, and realizing it not only meant needing to be a more advanced programmer to accomplish but I still couldn't type.  It was days of being unable to use my hands at all to only being able to use them for short periods of time. This meant that as a junior developer it was going to take too long to get to that point.  So I had to move on to the other suggestions from my brother.</p>
-			    <br>
-			    <p class="indent">He had also started a similar journey back in the spring, but not because he was in pain.  He was simply trying form better typing habits to avoid potential problems later.  He also wrote a blog on his website about it, <a href="http://nullprogram.com/blog/2017/04/01/">Null Program Typing Blog</a>, and sent me the link.  I took the time I needed to let my hands rest and heal, and getting a trigger point massage helped.  I found a great massage therapsit who worked on releasing all the knots and toxins in my forarms.  She is very experienced and has helped countless people who work on computers all day with the same pain I was experiencing.  I then started using the typingclub.com site my brother recommended to learn touch typing, and over time was able to not only type for longer periods of time with less pain, but also become a much faster typist.  Touch typing is basically keeping your hands on the home row of the keyboard and using specific fingers to reach all the different keys all while never looking down at the keyboard.  This also helps to keep good posture which is a key detial in preventing pain.   A few other pieces of advice is taking a break every hour to get up and move, every 15 minutes or so stretching out your arms, and regular exercise.</p>
-			    <br>
-			    <p class="indent">After learning new typing habits I ran into the same problem my brother did, Emacs shortcuts do not work with touch typing and break all the good habits I was trying to build up. So I looked into modal editing and switching to vi/vim which has it built in.  Modal editing is simply a way of changing the keyboard mode from editing mode to command mode.  This allows the same keys you already keep your hands at, the home row, to navigate around the file.  It is a little weird at fist and takes some practice, but has really helped so I can type longer and faster.  I would also suggest typing up a file you don't care about to learn the commands because I have accidentally deleted lines in the process of learning modal editing and vi/vim.</p>  
-			    <br>
-			    <p class="indent">I still have pain, and honestly any job where you have repetative movements like typing will wreak havon on those muscles.  I have spent the last few months not only learning touch typing and modal editing but also working with a physical therapist on my posture.  She has given me exercises to help me build the muscles I use to keep good posture, as well as suggested I use a pinky ball or tennis ball to massage my forarms and back myself. This is a cheap and easy way to help keep the pain at tolerable levels, and even go days without problems.  At the end of the day good posture, regular breaks, strecthing, self massage, and finding the right proffessionals, i.e. massage therapust, physical therapist, to help find weak spots all work together to keep me functioning.  It has been a long journey with lots of bumps, but has drastically improved my life. I highly suggest that you developed these good habits before you get injured or have problems.  It is not always the repetative movements that can cause these problems, the man who hacked the voice to text software injured his shoulder in a rock climbing accident that caused all his problems with typing.  I have back prblems from car accidents I was in 10 years ago that still cause me pain and have contributed to my typing problems.  You never know what life will throw at you, but one thing I learned is having good posture and stretching will always help prevent pain from repetative motions or injury.</p>
-			</article>
-			<article class="blog">
-			    <h3>Hybrid Polymer Element Bower.json</h3>
-			    <br>
-			    <time datetime="09-2-2017">
-				September 29, 2017
-			    </time>
-			    <br>
-			    <br>
-			    <p class="indent">So this week I am working on an open source Polymer Element, proplanr-repeat, to set up a repeating action/appointment.  It has taken some trial and error since I am new to Polymer, and it will be set up to save either to Firebase or your preferred database. The docs for Polymer are helpful, but they were missing some key elements to create a bower.json that will install both Polymer 1 and Polymer 2 dependencies in separate folders.  After looking at elements that other people have created I was able to find what I was missing.  The first thing is you need to add the proper version type at the end of the dependency in the bower.json file, #1 - 2.</p>
-			    <br>
-			    <pre><code>"dependencies": {
-    "paper-styles": "PolymerElements/paper-styles#1 - 2",
-    "polymer": "Polymer/polymer#1.9 - 2",
-    "paper-input": "PolymerElements/paper-input#1 - 2",
-    "paper-button": "PolymerElements/paper-button#1 - 2",
-    "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#1 - 2",
-    "paper-item": "PolymerElements/paper-item#1 - 2",
-    "paper-listbox": "PolymerElements/paper-listbox#1 - 2",
-    "paper-checkbox": "PolymerElements/paper-checkbox#1 - 2",
-    "vaadin-date-picker": "vaadin/vaadin-date-picker#^2.0.5",
-    "iron-form": "PolymerElements/iron-form#1 - 2"
-  },</code></pre>
-			    <br>
-			    
-			    <p class="indent">The big part I was missing hat they failed to explain in the docs was that you also had to add all the dependencies to the variant 1.x, with a different version specified. The version you need is the one compatible with Polymer 1, and usually you can find it in the docs for that element.  For most of the PolymerElements it is as simple as using, #^1.x.x.</p>
-			    <br>
-			    <pre><code>"variants": {
-    "1.x": {
-      "dependencies": {
-        "polymer": "Polymer/polymer#^1.9",
-        "paper-styles": "PolymerElements/paper-styles#^1.0.0",
-        "paper-input": "PolymerElements/paper-input#^1.0.2",
-        "paper-button": "PolymerElements/paper-button#^1.0.0",
-        "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^1.0.0",
-        "paper-item": "PolymerElements/paper-item#^1.0.0",
-        "paper-listbox": "PolymerElements/paper-listbox#^1.0.0",
-        "paper-checkbox": "PolymerElements/paper-checkbox#^1.0.1",
-        "vaadin-date-picker": "vaadin/vaadin-date-picker#^1.0.5",
-        "iron-form": "PolymerElements/iron-form#^1.0.1"
-      },</code></pre>
-			    <br>
-			    
-			    <p class="indent">Once I had the bower.json set-up properly I was able to run polymer install --variants and it installed both versions. In the root directory you will find both bower_components and bower_components-1.x, as well as a new bower.json created called bower-1.x.json. Then I ran polymer serve which allowed me to run the demo and test out both versions on a browser.  The next step will be incorporating the functionality to save the user input to a database and create the actions/appointments in the database as well.</p>
-			</article>
 		    </section>
 		</div><!-- close main -->
 	    </div> <!-- close row -->
