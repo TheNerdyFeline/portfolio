@@ -1,115 +1,40 @@
 <!DOCTYPE HTML>
 <HTML lang="en">
-    <head>
+  <head>
 	<meta charset="UTF-8">
 	<title>The Nerdy Feline</title>
 	<link rel="shortcut icon" href="./media/cat.ico" type="image/x-icon">
-	<!-- jquery link -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 	<!-- viewport info for media query -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7cRaleway" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
+  <script src="./components/header.js" type="text/javascript" defer></script>
 	
-    </head>
-    <body>
-	<header>
-	    <div class="row container">
-		<div class="col-xl-3 col-xl-offset-2">
-		    <img id='profile' src='media/profile-dec2017-small.jpg' alt='Kenzipic'>
-		    <h1><a href='/'>The Nerdy Feline</a></h1>
-		    <h2>Jackie Wellons</h2>
-		    <h2>jmw5050@gmail.com</h2>
-		</div>
-		<div class="col-xl-offset-10 col-xl-2">
-		    <nav class="navbar-fixed navbar-right" id='links'>
-			<div class="container-fluid">
-			    <div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar-fixed">
-				    <span class="glyphicon glyphicon-menu-hamburger"></span>
-				</button>
-			    </div>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-			    <ul class="nav navbar-nav navbar-right">
-				<li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline' class="navlink">Github<span class="sr-only">(current)</span></a></li>
-				<li><a href="https://www.linkedin.com/in/jackiewellons/" title="linkedin" class="navlink">Linkedin</a></li>
-				<li><a href="aboutme.html" title="aboutme" class="navlink">About Me</a></li>
-			    </ul>
-			</div>
-		    </nav>
-		</div>
-	    </div>
-	</header>
-	<main>
+   </head>
+   <body>
+	   <header-component></header-component>
+	   <main>
 	    <div class="row">
-		<div class="col-xl-3 col-xl-offset-4">
+		  <div class="col-xl-3 col-xl-offset-4">
 		    <section id="allBlogs">
                       <article class="blog">
-                        <h3>Getting Started in Cyber Security</h3>
+                        <h3>Where I am Now</h3>
                         <br>
                         <time datetime="7-11-19">
-                          July 11, 2019
+                          January 11, 2025
                         </time>
                         <br>
                         <br>
 												<p class='indent'>
-												When I was looking for work as web developer I started
-												finding more scammers	then clients. I quickly learned 
-												I needed to protect myself better online and
-												the sites I was building. So when I attended SCALE for the first time in
-												2018 I focused on the security panels. They not only
-												taught how to keep myself safer online but also to keep
-												my personal information more secure. I also learned how
-												to make sites I built safer and started finding meetups
-												for cyber security. I finally found the area I wanted to
-												focus on with my programming. I could continue using my
-												knowledge from web development in a new way. I
-												eventually attended an open house for a local tech
-												company, and that is where I learned about bug bounty
-												programs. I ended up focusing all my time on learning
-												about bug hunting.</p>
-                        <p class='indent'>I had made some friends in cyber
-												security so I reached out to them to see if they knew
-												where to start learning about bug hunting. They gave me
-												some great resources like Hacker1 and BugCrowd where I
-												found more info and resources. I started reading every
-												book and watching every youtube video I could find on the
-												subject. I also started implementing everything I
-												learned to my own life and trying out bug hunting. I had
-												already received great advice like using a password
-												manager, setting up to monitor accounts for any
-												transaction and login, and to lie for security
-												questions. All this has not only helped me feel more
-												secure but actually saved me from bigger problems. You can't
-												prevent data breaches but you can ensure it does as
-												little damage as possible by knowing as soon as
-												possible about it. It has been fun learning how people
-												find and exploit vulnerabilities.</p>
-                        <p class='indent'>I started out learning about OWASP's
-												top ten, and practicing on various capture the flag
-												virtual machines. I also started making my own pen test cheat
-												sheets based on the successful payloads from practicing
-												on purposely vulnerable sites and then running those on
-												real bug bounty programs. I still have a lot to learn,
-											  but that is the best part. One of my favorite moments so
-												far	was learning how to steel a cookie with XSS while
-												netcat was set to listen for the GET request when pop ups were 
-												being blocked. That was fun! Well off to learn and test,
-												TTFN.</p>
+												It has been quite the journey since I taught myself web hacking starting in 2018. After 2 years of training, I got a job Bugcrowd working as as an Application Security Engineer in the Security Operations Triage department. I started in May 2020, and I have been increasing my skill level and adding to my skill set while working there. In 2023 I started learning hardware hacking. I have been taking online classes, and I was also mentored by another hardware hacker working in the same department. He was in charge of all hardware triage, and I was slowly taking on some of those programs. After he left Bugcrowd I took over. In June of 2024 I started handling all hardware triage, which has been a great learning opportunity.</p>
+                        <p class='indent'>In last 2 years I have participated in triaging 4 different hardware bashes around the US for multiple customers, with plans to attend more this coming year. We have tested several types of hardware at these bashes such as hotel kiosks, 5G networks, SCADA based operational technology, and various routers. Part of my job is to triage reports that come in for those events, and I ensure the hackers get what they need to look for any potential vulnerabilities. I also help the customers and hackers work together for a successful event to help build up their cybersecurity resilience. These events also include getting to work with some of the best hardware hackers from around the world. They have taught me so much about hacking, and like most hackers they are very welcoming. Those friendships have helped me as I took over all of the remote hardware programs, which include IOT devices, medical equipment, and various routers. That list continues to grow, which is one of the best parts!</p>
+                        <p class='indent'>It has been a long 6 years, and despite all the chaos it has been some of the best days of my life! Hardware hacking had been on my list of things to learn for years, and thanks to Bugcrowd it became a reality. While I won't stay at Bugcrowd forever, it is a great place to learn and grow as a hacker. I have learned so much, and I am looking for what new adventures await me both with Bugcrowd and in the wonderful world of cybersecurity. I am going to be a certified hardware hacker soon, and I can't wait to see what new adventures that brings. I have also started taking self defense based martial arts, and at the end of December I earned my orange belt in a mix of Karate and Jiu-Jitsu. Well off to learn, hack, jab and throw, TTFN.</p>
                       </article>
 		    </section>
 		</div><!-- close main -->
 	    </div> <!-- close row -->
 	</main>
 	<!-- <script src="script.js" type="text/javascript"></script> -->
-    </body>
+  </body>
 </HTML>

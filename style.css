@@ -154,3 +154,25 @@ article:after {
     margin: auto;
     width: 300px;
 }
+
+/* Recent Adventures */
+
+#helicopter {
+    height:325px;
+}
+
+#helicopterSelfie {
+    height:325px;
+}
+
+#FHLcertificate {
+    display:block;
+    margin:auto;
+    height:500px;
+}
+
+#orangeBeltCertificate {
+    display:block;
+    margin:auto;
+    height:350px;
+}

@@ -4,51 +4,15 @@
 	<meta charset="UTF-8">
 	<title>The Nerdy Feline</title>
 	<link rel="shortcut icon" href="./media/cat.ico" type="image/x-icon">
-	<!-- jquery link -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<!-- viewport info for media query -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7cRaleway" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="./components/header.js" type="text/javascript" defer></script>
 	
     </head>
     <body>
-	<header>
-	    <div class="row container">
-		<div class="col-xl-3 col-xl-offset-2">
-		    <img id='profile' src='media/profile-dec2017-small.jpg' alt='Kenzipic'>
-		    <h1><a href='/'>The Nerdy Feline</a></h1>
-		    <h2>Jackie Wellons</h2>
-		    <h2>jmw5050@gmail.com</h2>
-		</div>
-		<div class="col-xl-offset-10 col-xl-2">
-		    <nav class="navbar-fixed navbar-right" id='links'>
-			<div class="container-fluid">
-			    <div class="navbar-header">
-			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar-fixed">
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
-			    </button>
-			    </div>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-			    <ul class="nav navbar-nav navbar-right">
-				<li><a href='https://www.github.com/thenerdyfeline' title='thenerdyfeline' class="navlink">Github<span class="sr-only">(current)</span></a></li>
-				<li><a href="https://www.linkedin.com/in/jackiewellons/" title="linkedin" class="navlink">Linkedin</a></li>
-				<li><a href="aboutme.html" title="aboutme" class="navlink">About Me</a></li>
-			    </ul>
-			</div>
-		    </nav>
-		</div>
-	    </div>
-	</header>
+	<header-component></header-component>
 	<main>
 	    <div class="row">
 		<div class="col-xl-3 col-xl-offset-4">
@@ -56,9 +20,9 @@
 		    <section id="about">
 			<h1 id="port">About Me</h1>
 			<br/>
-			<p class="indent">I am The Nerdy Feline, a nerd who loves cats, and a Penetration Tester. My main focus is on websites, but I am continuing to learn and develop new skills to find vulnerabilities and exploit them. I was a sound designer for 6 years, but it was not challenging enough, and I had always wanted to learn to code.  I started taking some classes, most of them were 1 day classes, intro to HTML/CSS, JavaScript, Python, anything I could find.</p>
-			<p class="indent">I loved playing around with JavaScript and Python, and was inspired to go back to school.  I found a great 6 month program at UCLA, and I enjoyed working on the homework assignments. My favorite part was developing code, and eventually found my way to cyber security. It started out as a way to keep myself secure online, and keeping the sites I built secure as well. I later learned about bug bounty programs, and that sparked my interest more then anything else I had worked on. It became my focus, and I started reaching out to friends I made who worked in that area. I started teaching myself how to test websites using the sources they provided like Hackerone and Bugcrowd. It has been so much fun learning new techniques to find and exploit vulnerabilities. I am working on some of my own tools for not only keeping myself safe but also for exploiting vulnerabilities. You can find some of my tools and resources on this site and on my GitHub at, <a href="https://github.com/TheNerdyFeline">TheNerdyFeline</a>.</p>
-			<p class="indent">I also love to cook, bake, garden, swim, and have 3 wonderful cats. Since moving to LA I have been inspired to eat and live healthier so I can be happy and healthy. Something else I had always wanted to learn was cooking, so I took some cooking classes.  At the end of a fun day of coding, I relish in cooking a healthy delicious meal. I live in LA, CA and am always looking for new adventures and new things to learn in coding and cooking.  Feel free to contact me if you have any questions.</p>
+			<p class="indent">I am The Nerdy Feline, a nerd who loves cats, and a Penetration Tester. My main focus is hardware and websites, but I am continuing to learn and develop new skills to find vulnerabilities and exploit them. I was a sound designer for 6 years, and then I went on to become a full stack web developer. For a while I was not sure what I wanted to do in with my skills, but fell into cybersecurity. I have been a hacker for 6 years, and I am still continuing to learn. </p>
+			<p class="indent">I love playing around with JavaScript and Python, and was inspired to go back to school for web development. My favorite part was developing code, and eventually found my way to cybersecurity. It started out as a way to keep myself secure online, and keeping the sites I built secure as well. I later learned about bug bounty programs, and that sparked my interest more then anything else I had worked on. It became my focus, and I started teaching myself how to test websites using the sources I found through platforms like Bugcrowd and HackerOne. It has been so much fun learning new techniques to find and exploit vulnerabilities on websites. I got a job at Bugcrowd working in triage, so I could learn more about hacking. With their help I was able to learn hardware hacking as well. I am working on some of my own tools for not only keeping myself safe but also for exploiting vulnerabilities.</p>
+			<p class="indent">I also love to cook, bake, martial arts, and have 6 wonderful cats. When I moved to LA I was inspired to eat and live healthier so I can be happy and healthy. Something else I had always wanted to learn was cooking, so I took some cooking classes. At the end of a fun day of hacking, I relish in cooking a healthy delicious meal. After year of being cooked in LA with the growing number of brush fires I eventually moved to Illinois. The weather may get colder in winter, but it's better then melting in LA year round. I can also afford more hobbies. I started taking a mix of Karate and Jiu-Jitsu for self defense. Since taking over hardware triage at Bugcrowd I started traveling more. So now I can protect myself online and in person. I recently earned my orange belt, and I progressing toward my next belt. I am always looking for new adventures and new things to learn in coding and cooking.  Feel free to contact me if you have any questions.</p>
 		    </section>
 
 		    <article
