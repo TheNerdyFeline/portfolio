@@ -171,8 +171,10 @@ article:after {
     height:500px;
 }
 
-#orangeBeltCertificate {
-    display:block;
-    margin:auto;
-    height:350px;
+#purpleCertificate {
+    height:340px;
+}
+
+#purpleBelt {
+    height:340px;
 }
